@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <!-- Projects Section -->
+    <div class="section" id="projects-section">
+      <div class="section-header" onclick="toggleLinks('projects-links')">
+        <h2>Other Projects</h2>
+      </div>
+      <div class="links" id="projects-links">
+        <a href="https://djohrabadache.github.io/Frontend-workshop/" class="link">nerdyorca</a>
+      <a href="https://githu6girl.github.io/drum-kit/" class="link">!Lara Croft</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preview Modal -->
+  <div id="preview-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePreview()">&times;</span>
+      <iframe id="preview-frame" src="" frameborder="0"></iframe>
+      <a id="go-to-site" class="go-to-site-btn" target="_blank">Go to Site</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
